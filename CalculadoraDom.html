@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="Estilo.css">
 </head>
 <body>
-<input type="text" id="Pantalla" readonly>
+<input class="visor" id="Pantalla" readonly/>
     <h1>Calculadora</h1>
-    <button onclick ="agregarNumero(`1`)">1</button>
+    <div class="button"><button onclick ="agregarNumero(`1`)">1</button>
     <button onclick ="agregarNumero(`2`)">2</button>
     <button onclick ="agregarNumero(`3`)">3</button>
     <button onclick ="agregarNumero(`4`)">4</button>
@@ -18,14 +19,15 @@
     <button onclick ="agregarNumero(`8`)">8</button>
     <button onclick ="agregarNumero(`9`)">9</button>
     <button onclick ="agregarNumero(`0`)">0</button>
-    <button onclick ="agregarNumero(`+`)">+</button>
-    <button onclick ="agregarNumero(`-`)">-</button>
-    <button onclick ="agregarNumero(`*`)">*</button>
-    <button onclick ="agregarNumero(`/`)">/</button>
-    <script>
-        function agregarNumero(numero) {
-    document.getElementById("Pantalla").value += numero;
-}
+    <button onclick ="agregarOperador(`+`)">+</button>
+    <button onclick ="agregarOperador(`-`)">-</button>
+    <button onclick ="agregarOperador(`*`)">*</button>
+    <button onclick ="agregarOperador(`/`)">/</button>
+    <button onclick ="resultado(`=`)">=</button>
+    <button onclick ="borrar(`c`)">C</button></div>
+    
+    <script src = calcu.js>
+  
     </script>
     
 
